@@ -18,48 +18,7 @@ NetApp periodically updates ONTAP Select to bring you new features and enhanceme
 [NOTE]
 ====
 * Beginning with ONTAP Select 9.10.1, you can no longer deploy a new cluster on the KVM hypervisor. 
-* Beginning with ONTAP Select 9.11.1, all manageability functionality is no longer available for existing KVM clusters and hosts, except for the take offline and delete functions.
 ====
-
-== ONTAP Select 9.13.1
-
-ONTAP Select 9.13.1 includes several new features and improvements. 
-
-Support for NVMe over TCP::
-
-When you upgrade to ONTAP Select 9.13.1, you must have the new license to support NVMe over TCP. This license is automatically included when you deploy ONTAP Select for the first time from version 9.13.1.
-
-Updated VMware ESXi support::
-
-Beginning with ONTAP 9.13.1, VMware ESXi 8.0 GA (build 20513097) is supported with hardware version 4 and later.
-
-== ONTAP Select 9.12.1
-
-ONTAP Select 9.12.1 benefits from most of the new developments in the current release of the core ONTAP product. It does not include any new features or improvements specific to ONTAP Select. 
-
-== ONTAP Select 9.11.1
-
-ONTAP Select 9.11.1 includes several new features and improvements. 
-
-Enhanced VMware ESXi support::
-
-ONTAP Select 9.11.1 includes support for VMware ESXi 7.0 U3C.
-
-Support for VMware NSX-T::
-
-ONTAP Select 9.10.1 and later releases have been qualified for VMware NSX-T version 3.1.2. There are no functional issues or deficiencies when using NSX-T with an ONTAP Select single-node cluster deployed with an OVA file and the ONTAP Select Deploy administration utility. However, when using NSX-T with an ONTAP Select multi-node cluster, you should note the following limitation for ONTAP Select 9.11.1:
-
-* Network connectivity checker
-+
-The network connectivity checker available through the Deploy CLI fails when it is run against an NSX-T based network.
-
-KVM hypervisor is no longer supported::
-+
-* Beginning with ONTAP Select 9.10.1, you can no longer deploy a new cluster on the KVM hypervisor. 
-+
-* Beginning with ONTAP Select 9.11.1, all manageability functionality is no longer available for existing KVM clusters and hosts, except for the take offline and delete functions.
-+
-NetApp strongly recommends that customers plan and execute a full data migration from ONTAP Select for KVM to any other ONTAP platform, including ONTAP Select for ESXi. For more information, see the https://mysupport.netapp.com/info/communications/ECMLP2877451.html[EOA Notice^]
 
 == ONTAP Select 9.10.1
 
